@@ -1,0 +1,22 @@
+.Cert_photos{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Cert_img{
+    margin: 1rem;
+    width: 90vw;
+}
+
+.navbar{
+    height: 2rem;
+}
+
+.navbar a{
+      position: absolute;
+      left: 6rem;
+}
+
