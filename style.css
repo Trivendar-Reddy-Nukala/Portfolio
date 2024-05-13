@@ -9,6 +9,7 @@ body {
     background-color: #D7D9CE;
     padding-top: 4rem;
     font-family: "Montserrat", sans-serif;
+    width: 100vw;
 }
 
 section{
@@ -78,7 +79,7 @@ nav {
     display: none;
 }
 
-@media (max-width: 450px){
+@media (max-width: 480px){
     .hide{
         display: block;
     }
@@ -122,6 +123,13 @@ nav {
     margin: 2rem;
 }
 
+@media (max-width : 480px) {
+    .Home_Section{
+        width:95vw;
+        margin: 0.5rem;
+    }
+}
+
 #profile_section {
     display: flex;
     flex-direction: row;
@@ -163,6 +171,13 @@ nav {
     margin: 2rem;
 }
 
+@media (max-width: 480px){
+    .skill_main{
+        width:95vw;
+        margin: 0.5rem;
+    }
+}
+
 .skill_main h3 {
     text-align: center;
 }
@@ -186,7 +201,8 @@ nav {
 
 #contact_main {
     display: flex;
-    justify-content: space-between;
+    width: 100vw;
+    justify-content: space-around;
 }
 
 @media(max-width: 480px) {
@@ -196,6 +212,7 @@ nav {
     .skill_photo{
         height: 8rem;
         width: 8rem;
+        margin: 1rem 0.5rem 0.5rem 0.5rem;
     }
 }
 
@@ -203,7 +220,7 @@ nav {
     height: 27rem;
     width: 35rem;
     background-color: white;
-    margin: 2rem;
+    margin: 1rem;
     padding: 1.5rem;
 }
 
@@ -214,9 +231,9 @@ h2 {
     font-size: 1.4rem;
 }
 
-#contact_part1 i{
+/* #contact_part1 i{
     margin-right: 10px;
-}
+} */
 
 .socialMedia {
     width: 100%;
@@ -242,18 +259,19 @@ h2 {
     height: 27rem;
     width: 35rem;
     background-color: white;
-    margin: 2rem;
+    margin: 1rem;
     font-size: 1.2rem;
     padding: 1.5rem;
 }
 @media(max-width:480px){
     #contact_part1{
-        width: 22rem;
-        margin: 1rem;
+        width: 95vw;
+        margin: 0;
+        padding: 0;
     }
     #contact_part2{
-        width: 22rem;
-        margin: 1rem;
+        width: 95vw;
+        margin: 0.5rem;
     }
 }
 
@@ -284,8 +302,8 @@ h2 {
 }
 
 #contact_part2 button {
-    position: absolute;
-    right: 5rem;
+    /* position: absolute; */
+    /* right: 5rem; */
     margin: 2rem;
     background-color: #119DA4;
     border: none;
