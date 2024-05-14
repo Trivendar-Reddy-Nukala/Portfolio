@@ -20,5 +20,9 @@
       left: 6rem;
 }
 
-
+@media (max-width: 480px) {
+    .navbar a{
+        display: block;
+    }
+}
 
