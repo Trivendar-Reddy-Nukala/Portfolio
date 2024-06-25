@@ -1,0 +1,45 @@
+.Cert_photos{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Cert_img{
+    margin: 1rem;
+    width: 400px;
+    border: 1px solid grey;
+}
+
+.navbar{
+    height: 2rem;
+}
+
+.navbar a{
+      position: absolute;
+      left: 6rem;
+}
+
+@media (max-width: 480px) {
+    .navbar a{
+        display: block;
+    }
+    .Cert_img{
+        width: 90vw;
+        flex-direction: column;
+        flex-wrap: none;
+    }
+}
+#show_body{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    padding-top: 10px;
+}
+.show_img{
+    width: 800px;
+    height: 600px;
+    margin-top: 1rem;
+}
