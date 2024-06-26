@@ -10,11 +10,7 @@ if(window.innerWidth > 480){
 check = () =>{
     if(btn_value){
         slidebar.classList.remove("hide_bar");
-<<<<<<< HEAD
         btn_value = false;
-=======
-        btn_value = false
->>>>>>> 65bb9ec4b85c467a223b5de4ea3e99d2f3bc208e
     }else{
         slidebar.classList.add("hide_bar");
         btn_value = true;
