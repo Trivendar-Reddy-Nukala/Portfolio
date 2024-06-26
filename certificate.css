@@ -12,6 +12,7 @@
 
 .navbar{
     height: 2rem;
+    width: 100vw;
 }
 
 .navbar a{
