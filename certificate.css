@@ -2,17 +2,30 @@
     width: 100vw;
     height: auto;
     display: flex;
+<<<<<<< HEAD
     flex-wrap: wrap;
 }
 .Cert_img{
     margin: 1rem;
     width: 400px;
     border: 1px solid grey;
+=======
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Cert_img{
+    margin: 1rem;
+    width: 90vw;
+>>>>>>> 65bb9ec4b85c467a223b5de4ea3e99d2f3bc208e
 }
 
 .navbar{
     height: 2rem;
+<<<<<<< HEAD
     width: 100vw;
+=======
+>>>>>>> 65bb9ec4b85c467a223b5de4ea3e99d2f3bc208e
 }
 
 .navbar a{
@@ -24,6 +37,7 @@
     .navbar a{
         display: block;
     }
+<<<<<<< HEAD
     .Cert_img{
         width: 90vw;
         flex-direction: column;
@@ -44,3 +58,7 @@
     height: 600px;
     margin-top: 1rem;
 }
+=======
+}
+
+>>>>>>> 65bb9ec4b85c467a223b5de4ea3e99d2f3bc208e

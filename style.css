@@ -222,10 +222,17 @@ nav {
 
 #contact_part1 {
     height: 27rem;
+<<<<<<< HEAD
     width: 45%;
     background-color: white;
     margin: 1%;
     padding: 0.5rem;
+=======
+    width: 35rem;
+    background-color: white;
+    margin: 1rem;
+    padding: 1.5rem;
+>>>>>>> 65bb9ec4b85c467a223b5de4ea3e99d2f3bc208e
 }
 
 #contact_part1 p,
@@ -261,7 +268,11 @@ h2 {
 
 #contact_part2 {
     height: 27rem;
+<<<<<<< HEAD
     width: 45%;
+=======
+    width: 35rem;
+>>>>>>> 65bb9ec4b85c467a223b5de4ea3e99d2f3bc208e
     background-color: white;
     margin: 1rem;
     font-size: 1.2rem;
