@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    padding: 0 15px;
+    text-align: justify;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+
+.AboutWebBody {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 7rem;
+}
+
+.AboutWebBody h2 {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+    .AboutWebBody {
+        max-width: 80%;
+        padding: 40px;
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    nav {
+        padding: 20px;
+    }
+
+    .navbar a {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .AboutWebBody {
+        padding: 30px;
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .navbar a {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .AboutWebBody {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    .AboutWebBody {
+        padding: 15px;
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+footer p{
+    text-align: center;
+}
