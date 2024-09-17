@@ -1,10 +1,10 @@
 import info from './info.js';
 
 document.addEventListener('DOMContentLoaded', function () {
-    console.log(info);
     const blogBody = document.querySelector('.blogBody');
     let htmlContent = '';
 
+    // Generate the blog content
     info.forEach((item, index) => {
         htmlContent += `
             <div id="blog_border">
@@ -19,33 +19,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     blogBody.innerHTML = info.length === 0 ? "<h2>Uploads soon</h2>" : htmlContent;
 
-    // Function to handle "More..." and "Show less" toggling
-    function toggleOpinion(event) {
-        event.preventDefault();
-        const index = event.target.getAttribute('data-index');
-        const opinionElement = document.getElementById(`opinion-${index}`);
-        const fullOpinion = info[index].opinion;
-
-        if (event.target.classList.contains('show-more')) {
-            // Show full opinion and switch to "Show less"
-            opinionElement.innerHTML = `
-                ${fullOpinion}
-                <a href="#" class="show-less" data-index="${index}">Show less</a>
-            `;
-        } else {
-            // Show truncated opinion and switch back to "More..."
-            opinionElement.innerHTML = `
-                ${fullOpinion.slice(0, 50)}
-                <a href="#" class="show-more" data-index="${index}">More...</a>
-            `;
-        }
-
-        // Re-attach event listener to the newly created "More..." or "Show less" link
-        opinionElement.querySelector('a').addEventListener('click', toggleOpinion);
-    }
-
-    // Attach the event listener for all initial "More..." links
-    document.querySelectorAll('.show-more').forEach(link => {
-        link.addEventListener('click', toggleOpinion);
+    // Add event listeners to all "More..." links
+    const showMoreLinks = document.querySelectorAll('.show-more');
+    showMoreLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent the default anchor behavior
+            const index = this.getAttribute('data-index'); // Get the index from data attribute
+            localStorage.setItem("storedIndex", index); // Store the index
+            window.location = "show_blog.html"; // Redirect to the show_blog page
+        });
     });
 });

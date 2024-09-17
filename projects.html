@@ -8,34 +8,39 @@
     <meta name="author" content="Trivendar Reddy">
     <title>Trivendar Reddy - Projects</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="project.css">
 </head>
 
 <body>
     <nav>
         <div class="navbar">
-            <a href="index.html" aria-label="Back to Home"><i class="fa-solid fa-angle-left"></i></a>
+            <a href="index.html" aria-label="Back to Home"><i class="fa-solid fa-angle-left"></i>Previous</a>
         </div>
     </nav>
-    <section>
-        <div class="project">
-            <a href="https://github.com/Trivendar-Reddy-Nukala/Medical-Store-Management-System" target="_blank" rel="noopener noreferrer">
-                <i class="fa-solid fa-link"></i> Medical-Store-Management-System
-            </a>
-            <p>Python</p>
-        </div>
-        <div class="project">
-            <a href="https://github.com/Trivendar-Reddy-Nukala/Tic-Tac-Toe" target="_blank" rel="noopener noreferrer">
-                <i class="fa-solid fa-link"></i> Tic-Tac-Toe
-            </a>
-            <p>HTML, CSS, JavaScript</p>
-        </div>
-    </section>
+    <section></section>
     <footer>
-        <p><i class="fa-solid fa-copyright">Designed & developed by Trivendar Reddy 
-        </i></p>
+        <p><i class="fa-solid fa-copyright"></i> Designed & developed by Trivendar Reddy</p>
     </footer>
+
+    <script type="module">
+        import projectInfo from './project_info.js';
+
+        document.addEventListener('DOMContentLoaded', function () {
+            let section = document.querySelector('section');
+            let a = '';  // Initialize the variable 'a'
+            projectInfo.forEach((item, index) => {
+                a += `
+                <div class="project">
+                    <a href="${item.link}" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-link"></i> ${item.title}
+                    </a>
+                    <p>${item.language}</p>
+                </div>`;
+            });
+            section.innerHTML = a;
+        });
+    </script>
 </body>
 
 </html>

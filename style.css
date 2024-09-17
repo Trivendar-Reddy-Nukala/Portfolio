@@ -18,7 +18,8 @@ body {
     width: 100vw;
     line-height: 1.6;
     flex-direction: column;  
-    min-height: 100vh;       
+    min-height: 100vh;    
+    flex: 1;   
 }
 
 section {
@@ -167,41 +168,6 @@ nav {
     }
 }
 
-.skill_main {
-    width: 100%;
-    background-color: #FFF;
-    padding: 2rem;
-    margin: 1rem 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    text-align: center;
-}
-
-.skill_main h3 {
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-    color: #13505B;
-}
-
-#Web_photo {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-}
-
-.skill_photo {
-    height: 8rem;
-    width: 8rem;
-    margin: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.skill_photo:hover {
-    transform: scale(1.1); /* Zoom effect on hover */
-}
 
 #contact_main {
     display: flex;
@@ -298,38 +264,37 @@ nav {
     }
 }
 footer {
-    background-color: #13505B; 
-    color: #fff; 
-    padding: 20px 0; 
-    text-align: center; 
-    font-family: Arial, sans-serif; 
-    flex-shrink: 0;margin-top: 1rem;
-
+    background-color: #13505B; /* Match nav background color */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Ensure consistent font */
+    margin-top: 1rem;
+    position: relative; /* To ensure it doesn’t overlap with other content */
 }
 
 footer p {
-    margin: 0; 
-    font-size: 16px; 
+    margin: 0;
+    font-size: 16px;
 }
 
 footer i {
-    font-style: normal; 
+    font-style: normal;
     margin-right: 8px;
 }
 
 @media (max-width: 768px) {
     footer {
-        padding: 15px 0; 
+        padding: 15px 0;
     }
-    
+
     footer p {
-        font-size: 14px; 
+        font-size: 14px;
     }
 }
 
 @media (max-width: 480px) {
     footer p {
-        font-size: 12px; 
+        font-size: 12px;
     }
 }
-

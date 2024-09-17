@@ -1,0 +1,60 @@
+/* Skill section styling */
+.skill_main {
+    width: 100%;
+    background-color: #FFF;
+    padding: 2rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.skill_main h3 {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: #13505B;
+
+}
+h5{
+    font-size: 1.5rem;
+}
+
+/* Flex container for skill photos */
+.photo_container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* Skill item container that holds the image and text */
+.skill_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 8rem;
+    margin: 1rem;
+}
+
+/* Skill photos */
+.skill_photo {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Zoom effect on hover */
+.skill_photo:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Text for skill names */
+.skill_item p {
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+    color: #13505B;
+    font-weight: 500;
+    text-align: center;
+}
