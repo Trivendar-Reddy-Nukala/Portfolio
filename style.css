@@ -13,7 +13,8 @@ html {
 body {
     background-color: #F0F1F6;
     padding-top: 4rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Arial', sans-serif;
+    display: flex;
     color: #333;
     width: 100vw;
     line-height: 1.6;
@@ -45,11 +46,20 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.navbar a {
+/* Styling for the links inside the nav */
+nav a {
     color: #fff;
     text-decoration: none;
     font-size: 1.5rem;
 }
+
+/* Menu button image styling */
+.Menubtn img {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
 
 .sidebar {
     height: 100vh;
@@ -85,26 +95,6 @@ nav {
 
 .sidebar a i {
     margin-right: 10px;
-}
-
-.Menubtn {
-    position: absolute;
-    margin: 1rem;
-    height: 2.5rem;
-    width: 3rem;
-    display: flex;
-    background-color: #13505B;
-    border: 2px solid white;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    color: #FFF;
-    cursor: pointer;
-}
-
-#menu_icon {
-    height: 2rem;
-    width: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -167,12 +157,62 @@ nav {
         margin-bottom: 1rem;
     }
 }
+.Resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #13505B;
+    color: #FFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Resume a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Resume a i {
+    margin-left: 8px;
+    font-size: 1.5rem;
+}
+
+.Resume:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .Resume {
+        max-width: 90%;
+        padding: 1rem;
+    }
+
+    .Resume a {
+        font-size: 1.1rem;
+    }
+
+    .Resume a i {
+        font-size: 1.25rem;
+    }
+}
 
 
 #contact_main {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
     gap: 1rem;
 }
 
@@ -263,19 +303,22 @@ nav {
         width: 100%; /* Full width on mobile */
     }
 }
+
+
 footer {
-    background-color: #13505B; /* Match nav background color */
-    color: #fff;
-    padding: 20px 0;
+    background-color: #13505B;
+    color: #FFF;
+    padding: 1.5rem 0;
+    font-family: 'Arial', sans-serif;
     text-align: center;
-    font-family: 'Arial', sans-serif; /* Ensure consistent font */
-    margin-top: 1rem;
-    position: relative; /* To ensure it doesn’t overlap with other content */
+    width: 100%;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    margin-top: auto; 
 }
 
 footer p {
     margin: 0;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 footer i {
@@ -283,18 +326,29 @@ footer i {
     margin-right: 8px;
 }
 
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #FFF;
+}
+
+/* Responsive footer adjustments */
 @media (max-width: 768px) {
     footer {
-        padding: 15px 0;
+        padding: 1rem 0;
     }
 
     footer p {
-        font-size: 14px;
+        font-size: 0.9rem;
     }
 }
 
 @media (max-width: 480px) {
     footer p {
-        font-size: 12px;
+        font-size: 0.8rem;
     }
 }
